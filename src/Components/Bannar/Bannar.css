@@ -9,7 +9,7 @@
 
 .my-img{
     /* margin-top: -150px; */
-    margin-bottom: 250px;
+    /* margin-bottom: 250px; */
 }
 *{
     margin: 0;
@@ -24,13 +24,12 @@
 }
 .wrapper .static-text{
     color: ghostwhite;
-    font-size: 60px;
     font-weight: 400;
 }
 .wrapper .dynamic-texts{
     margin-left: 15px;
-    line-height: 90px;
-    height: 80px;
+    line-height: 70px;
+    height: 70px;
     overflow: hidden;
 }
 .dynamic-texts{
@@ -38,7 +37,6 @@
 }
 .dynamic-texts li{
     list-style: none;
-    font-size: 60px;
     text-align: start;
     font-weight: 500;
     color: #FC6D6D;
@@ -47,13 +45,13 @@
     color:aquamarine;
     position: relative;
     top: 0px;
-   animation: slide 12s steps(4) infinite;
+   animation: slide 32s steps(4) infinite;
 
 }
 
 @keyframes slide {
     100%{
-        top: -360px;
+        top: -280px;
     }
 }
 .dynamic-texts li span{
@@ -65,18 +63,23 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    border-left: 2px solid #FC6D6D;
+    border-left: 2px solid aquamarine;;
     left: 0;
     background: #000000;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    top: 0px;
     /* border: 1px solid red; */
-    animation: typing 3s steps(20) infinite;
+    animation: typing 8s steps(20) infinite;
 
 }
 
 @keyframes typing {
-    100%{
+    50%{
         left:100%;
+        margin: 0 -35px 0 35px;
+    }
+    100%{
+        right:100%;
         margin: 0 -35px 0 35px;
     }
 }
