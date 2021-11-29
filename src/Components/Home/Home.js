@@ -1,5 +1,6 @@
 import React from 'react';
 import Bannar from '../Bannar/Bannar';
+import ContactMe from '../ContactMe/ContactMe';
 import NavBar from '../NavBar/NavBar';
 import './Home.css'
 const Home = () => {
@@ -10,8 +11,10 @@ const Home = () => {
             <section className='pattern'>
                 <div className="geeks">
                     <Bannar></Bannar>
-                </div>
-            </section></div>
+                    </div>
+
+                </section></div>
+            <ContactMe></ContactMe>
         </div>
     );
 };

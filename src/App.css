@@ -1,5 +1,12 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
 .App {
   text-align: center;
+  /* font-family: 'Mochiy Pop One', sans-serif; */
+font-family: 'Poppins', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
 }
 
 .App-logo {
