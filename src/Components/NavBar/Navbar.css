@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 .navigation-bar{
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(0, 0, 0);
 }
 .nav-head{
     color: ghostwhite;
@@ -24,10 +24,11 @@
 .nav-items{
     text-decoration: none;
     border-radius: 10px;
+    color: white;
 }
 .nav-items:hover{
     background-color:royalblue;
-    background-color:olive;
+    background-color:rgba(128, 128, 0, 0.274);
 }
 .user-name{
     color: rgba(128, 255, 0, 0.692);

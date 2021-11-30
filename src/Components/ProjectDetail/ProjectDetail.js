@@ -1,7 +1,8 @@
 import React from 'react';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import ProjectCard2 from '../ProjectCard2/ProjectCard2';
-import './Projects.css'
+import {useParams} from 'react-router-dom';
+import NavBar from '../NavBar/NavBar';
+import Slider from '../Slider/Slider';
+import './ProjectDetail.css'
 const projects=[
     {
         id: 1,
@@ -102,21 +103,41 @@ const projects=[
         ],
     }
 ]
-const Projects = () => {
+const ProjectDetail=() => {
+    const params=useParams();
+    const {id}=params;
+    const site=projects[id-1];
+    const {projectName, summary, client, server, live, img, points, technology}=site;
     return (
-        <div className='container main-projects'>
-            <br />
-            <h1 className='fw-bold my-5 projects-title'>Here is some of my projects</h1>
-            {
-                projects.map(project => <ProjectCard2
-                    key={project.id}
-                    project = {project}
-                ></ProjectCard2>)
-            }
+        <div>
+            <NavBar></NavBar>
+            <div className="container mt-4">
 
+              <div className='d-flex justify-content-center align-items-center'>
+            <div className="details-head row">
+            <div className="details-slider col-md-7">
+                <Slider img={img} ></Slider>
+            </div>
+                <div className="details-heading col-md-5">
+            <h2 className='title-project'>{projectName}</h2>
+                            <h5 className='summary'>{summary}</h5>
+                            <a href={live} target='blank'> <button className='button-27'> Live Website</button></a> <br /> <br />
+            <a href={client} target='blank'> <button className='button-27'>Github Server Side</button>  </a> <br /> <br />
+            <a href={server} target='blank'><button className='button-27'>Github Server Side</button></a>
+            <br /> <br />
+             </div></div></div>
+                <br /> <br />
+                <h2 className='tech my-5'>{projectName} website was built using {technology}</h2>
+                <h1 className='projects-title my-5'> More Details About The Website</h1>
+            <ul className='lists'>
+                {
+                    points.map(point =><div className='text-start my-4 list'><i class="fas fa-hand-point-right d-inline"></i> <li className='text-start d-inline'>{point}</li></div> )
+                }
+            </ul>
+</div>
 
         </div>
     );
 };
 
-export default Projects;
+export default ProjectDetail;

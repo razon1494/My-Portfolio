@@ -1,33 +1,34 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
-
-const NavBar=() => {
+const NavBar = () => {
 
     return (
-  <div className=" navigation">
-  <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
+        <div className="">
+            <Navbar className='navigation-bar' collapseOnSelect expand="lg">
   <Container>
-  <Navbar.Brand href="#home">Arifur Rahman</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Brand>
+              <NavLink to='/home' className='navbar-title'>
+                <h2 className='nav-head'>Arifur Rahman</h2>
+                </NavLink>
+  </Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav " />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mx-auto">
-      <Nav.Link href="#navigation">Home</Nav.Link>
-      <Nav.Link href="#aboutme">About Me</Nav.Link>
-      <Nav.Link href="#resume">Resume</Nav.Link>
-      <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-      <Nav.Link href="#testimonial">Testimonial</Nav.Link>
-      <Nav.Link href="#contactme">Contact Me</Nav.Link>
-
+    <Nav className="me-auto">
     </Nav>
-    <Nav>
-     <Nav.Link href="Arifur-Rahman-Resume.pdf" download> <button className='btn btn-secondary'>Resume</button> </Nav.Link>
-
-    </Nav>
+    <Nav className='mx-auto'>
+      <NavLink className='nav-items fs-6 px-3  py-2 fw-bold text-white' to='/home'>Home</NavLink>
+      <NavLink className='nav-items fs-6 px-3  py-2 fw-bold text-white' to="/aboutmedetails">About me</NavLink>
+      <NavLink className='nav-items fs-6 px-3  py-2 fw-bold text-white' to="/blogs">My Blogs</NavLink>
+      <NavLink className='nav-items fs-6 px-3  py-2 fw-bold text-white' to="/">Contact Me</NavLink>
+              </Nav>
+              <Nav.Link href="Arifur-Rahman-Resume.pdf" download> <button className='btn btn-secondary'>Resume</button> </Nav.Link>
   </Navbar.Collapse>
   </Container>
 </Navbar>
+
         </div>
     );
 };

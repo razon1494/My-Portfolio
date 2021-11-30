@@ -1,0 +1,13 @@
+.projects-title{
+    text-transform: uppercase;
+
+    color:gray;
+    text-decoration: underline overline;
+}
+.projects-title:hover{
+    text-transform: uppercase;
+    color:rgba(255, 68, 0, 0.76);
+    color:gray;
+    color:darkcyan;
+    /* text-decoration: none; */
+}
