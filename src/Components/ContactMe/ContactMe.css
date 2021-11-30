@@ -3,6 +3,22 @@
 }
 
 
+.social-title{
+    font-weight: 500;
+    letter-spacing: 3px;
+    word-spacing: 15px;
+    color:darkslategrey ;
+
+}
+.address{
+    color: DarkSlateBlue;
+}
+.address:hover{
+    color: DarkSlateBlue;
+    color: goldenrod;
+    cursor: pointer;
+}
+
 .social-media-icon a{
     text-decoration: none;
     color: black;
