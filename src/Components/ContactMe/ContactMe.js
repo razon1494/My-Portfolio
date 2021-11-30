@@ -22,14 +22,36 @@ const ContactMe = () => {
                         </div>
                         <div className="social-media-icon">
                             <h3>Social Media</h3>
-                            <a className='fs-3' href="https://www.facebook.com/arifurrahman.razon.7/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                            {/* <a className='fs-3' href="https://www.facebook.com/arifurrahman.razon.7/" target="blank"><i class="fab fa-facebook-square"></i></a>
 
-                            <a className='fs-3' href="https://twitter.com/ArifurR63953853" target="blank"><i class="fab fa-twitter-square"></i></a>
+
+                            <a className='fs-3' href="https://twitter.com/ArifurR63953853" target="blank"></a>
 
                             <a className='fs-3' href="www.linkedin.com/in/arifur-rahman123" target="blank"><i class="fab fa-linkedin"></i></a>
 
-                            <a className='fs-3' href="https://github.com/razon1494" target="blank"><i class="fab fa-github-square"></i></a>
+                            <a className='fs-3' href="https://github.com/razon1494" target="blank"><i class="fab fa-github-square"></i></a> */}
                         </div>
+                        <div className="wrapper">
+                            <div className="button">
+
+                                <div className="icon"><a className='fs-3' href="https://www.facebook.com/arifurrahman.razon.7/" target="blank"><i class="fab fa-facebook-f"></i> </a></div>
+                           <a className='fs-3' href="https://www.facebook.com/arifurrahman.razon.7/" target="blank">    <span>Facebook</span> </a> </div>
+
+                            <div className="button">    <div className="icon"><i class="fab fa-linkedin"></i></div>
+                                <span>LinkedIn</span></div>
+
+                           <div className="button">       <div className="icon"><i class="fab fa-twitter"></i></div>
+                                <span>Twitter</span></div>
+
+                         <div className="button">         <div className="icon"><i class="fab fa-instagram"></i></div>
+                                <span>Instagram</span></div>
+                            <div className="button">     <div className="icon"><i class="fab fa-github"></i></div>
+                                <span>Github</span></div>
+
+                        <div className="button">        <div className="icon"><i class="fab fa-youtube"></i></div>
+                                <span>Youtube</span>
+                            </div></div>
+
 
                     </div>
                 </div>

@@ -21,8 +21,11 @@ const Home = () => {
                     <Bannar></Bannar>
                     </div>
                 </section></div>
-            <Skills></Skills>
-            <AboutMe></AboutMe>
+
+            <div data-aos="zoom-out"><Skills></Skills></div>
+            <br />
+<div data-aos="zoom-in"><AboutMe></AboutMe></div>
+
           <ContactMe></ContactMe>
             <Projects></Projects>
 

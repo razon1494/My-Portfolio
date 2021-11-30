@@ -3,7 +3,7 @@ import './Skills.css'
 const Skills=() => {
     return (
         <div className='my-5'>
-            <h1 className='my-5' >My Skill Highlights</h1>
+            <h1 className='my-5 projects-title' >Skill Highlights</h1>
     <div className="d-flex container justify-content-center align-items-center">
 <div class="skill-bars">
     <div class="bar">
