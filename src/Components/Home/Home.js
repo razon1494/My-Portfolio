@@ -26,8 +26,9 @@ const Home = () => {
             <br />
 <div data-aos="zoom-in"><AboutMe></AboutMe></div>
 
-          <ContactMe></ContactMe>
-            <Projects></Projects>
+        <div data-aos="fade-down"><ContactMe></ContactMe></div>
+        <div data-aos="fade-up"><Projects></Projects></div>
+
 
             <Footer/>
 

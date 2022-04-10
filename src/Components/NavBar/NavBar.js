@@ -23,8 +23,7 @@ const NavBar = () => {
       <NavLink className='nav-items fs-6 px-3  py-2 fw-bold text-white' to="/aboutmedetails">About me</NavLink>
       <NavLink className='nav-items fs-6 px-3  py-2 fw-bold text-white' to="/blogs">My Blogs</NavLink>
       <NavLink className='nav-items fs-6 px-3  py-2 fw-bold text-white' to="/">Contact Me</NavLink>
-              </Nav>
-              <Nav.Link href="Arifur-Rahman-Resume.pdf" download> <button className='btn btn-secondary'>Resume</button> </Nav.Link>
+              </Nav><Nav.Link href="Arifur-Rahman-Resume.pdf" download> <button className='button-80 px-3 py-2'>Resume</button> </Nav.Link>
   </Navbar.Collapse>
   </Container>
 </Navbar>

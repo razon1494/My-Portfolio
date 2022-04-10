@@ -1,5 +1,6 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
+import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import Slider from '../Slider/Slider';
 import './ProjectDetail.css'
@@ -13,13 +14,17 @@ const projects=[
         client: 'https://github.com/razon1494/Gaming-Chair',
         server: 'https://github.com/razon1494/Gaming-Chair-Server',
         live: 'https://gamers-chair.web.app/home',
-        img: ['https://i.ibb.co/7b5VRQL/gamers1.png',
-        'https://i.ibb.co/M6mD3CJ/gamers3.png',
-            'https://i.ibb.co/rykVZ1H/gamers2.png',
+        img: ['https://i.ibb.co/rt5Wg34/Screenshot-86.png',
+        'https://i.ibb.co/RDg3Dnr/Screenshot-87.png',
+            'https://i.ibb.co/BZWMk7G/Screenshot-88.png',
         'https://i.ibb.co/72gGwYN/slider2.png',
+        'https://i.ibb.co/VLRS0mF/Screenshot-94.png',
+            'https://i.ibb.co/7RjGMNm/Screenshot-89.png',
+            'https://i.ibb.co/nnNR7qY/Screenshot-90.png',
+            'https://i.ibb.co/KqX7Dv0/Screenshot-91.png',
+            'https://i.ibb.co/cDC9kFf/Screenshot-92.png',
+            'https://i.ibb.co/M8X5HbD/Screenshot-93.png'
 
-        'https://static.toiimg.com/thumb/msid-82160513,width-1200,height-900,resizemode-4/.jpg',
-        'https://i.ibb.co/wNt1SY8/gamers4.png'
         ],
         points: [
             'On the landing page Home Page has an slider showing some energetic photos with qoutes.',
@@ -47,11 +52,15 @@ const projects=[
         client: 'https://github.com/razon1494/Seakers-Client',
         server: 'https://github.com/razon1494/Seakers-Server',
         live: 'https://free-run-travels.web.app/home',
-        img: ['https://i.ibb.co/x26mH4y/seaker-2.png',
-            'https://i.ibb.co/1sRwQ64/seaker-1.png',
+        img: ['https://i.ibb.co/fvbrzXj/Screenshot-97.png',
+            'https://i.ibb.co/Y048YCt/Screenshot-98.png',
+        'https://i.ibb.co/6PwNMVv/Screenshot-99.png',
         'https://i.ibb.co/yshR9nJ/slide1.png',
-        'https://i.ibb.co/yshR9nJ/slide1.png',
-        'https://i.ibb.co/Jx8D0Wz/thumb2png.png'
+        'https://i.ibb.co/S5NTXN5/Screenshot-100.png',
+        'https://i.ibb.co/dMH0DJm/Screenshot-101.png',
+        'https://i.ibb.co/mv033S1/Screenshot-102.png',
+        'https://i.ibb.co/7jRDGK4/Screenshot-95.png',
+        'https://i.ibb.co/N1gxVVg/Screenshot-96.png'
         ],
         points: [
             'On the landing page Home Page has an slider showing some energetic photos with qoutes so that people encourged to go byond.',
@@ -76,15 +85,15 @@ const projects=[
         client: 'https://github.com/razon1494/care-cure',
         server: 'https://github.com/razon1494/care-cure',
         live: 'https://health-care-assignment-10.web.app/',
-        img: [        'https://i.ibb.co/hM9x4Jz/care-2.png',
-            'https://i.ibb.co/WG06smT/care-1.png',
+        img: [        'https://i.ibb.co/2t2FvB8/Screenshot-108.png',
+            'https://i.ibb.co/cQ4bbxx/Screenshot-103.png',
 
-            'https://i.ibb.co/fpdPf0F/care-3.png',
+            'https://i.ibb.co/zGdLBLr/Screenshot-104.png',
         'https://i.ibb.co/GVs2GDW/slide3.png',
-        'https://i.ibb.co/Jx8D0Wz/thumb2png.png',
+        'https://i.ibb.co/K6TtnbB/Screenshot-105.png',
 
-'https://i.ibb.co/qBjKPR5/thumb1.png',
-        'https://i.ibb.co/ftFhRyV/care.png'
+'https://i.ibb.co/PYHx0Gd/Screenshot-106.png',
+        'https://i.ibb.co/Hz0cgfX/Screenshot-107.png'
         ],
         points: [
             'In this website user can sign up & login using thei email password or google account.',
@@ -133,8 +142,10 @@ const ProjectDetail=() => {
                 {
                     points.map(point =><div className='text-start my-4 list'><i class="fas fa-hand-point-right d-inline"></i> <li className='text-start d-inline'>{point}</li></div> )
                 }
-            </ul>
-</div>
+                </ul>
+
+            </div>
+            <Footer/>
 
         </div>
     );

@@ -3,11 +3,12 @@
 }
 
 
-.social-title{
-    font-weight: 500;
+.social-title1{
+    font-weight: 600;
     letter-spacing: 3px;
     word-spacing: 15px;
     color:darkslategrey ;
+    color:darkslateblue;
 
 }
 .address{
@@ -18,7 +19,23 @@
     color: goldenrod;
     cursor: pointer;
 }
-
+.touch-text{
+    letter-spacing: 3px;
+    color: darkcyan;
+}
+.all-contact{
+    letter-spacing: 3px;
+    color: darkcyan;
+}
+.reply-text{
+    text-align: justify;
+    color: gray;
+}
+.send-text{
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: darkcyan;
+}
 .social-media-icon a{
     text-decoration: none;
     color: black;

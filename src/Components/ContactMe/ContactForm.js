@@ -9,8 +9,8 @@ const ContactForm=() => {
       return <p>Thanks for joining!</p>;
   }
     return (
-        <div className=''>
-            <h2>Send Me Direct Message Here</h2>
+        <div className='my-4'>
+            <h2 className='send-text mb-4'>Send Me Direct Message Here</h2>
     <form className='' onSubmit={handleSubmit}>
                 <TextField sx={{ width: '70%' }} id="demo-helper-text-misaligned-no-helper email" label="Email" type="email"
                     helperText="Please enter your email"
